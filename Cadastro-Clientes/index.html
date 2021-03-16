@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Clientes</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <h1>Cadastro de Clientes</h1>
+        </div>
+    </header>
+    <section class="main">
+        <div class="left-menu">
+            <div class="menu-header">
+                <p>MENU</p>
+            </div>
+            <a href="">Cadastro</a>
+            <a href="">Clientes Cadastrados</a>
+            <a href="">Sair</a>
+        </div>
+        <div class="dashboard">
+             <p> Nome:
+                 <input type="text" size="80"  id="nomeInput">
+             </p>
+            <p> CPF: 
+                <input type="text" size="15"  id="cpfInput">
+            </p>
+            <p> Data de Nascimento: 
+                <input type="text"  id="nascInput">
+            </p>
+            <p> Cidade: 
+                <input type="text"  id="cityInput">
+            </p>
+
+            <button id="btnCadastrar">Cadastrar novo</button>
+            <button id="btnLimpar">Limpar campos</button>
+            
+            <div class="cliente-list">
+                <hr>
+                <h2>Clientes Cadastrados</h2>
+                <ul id="list">
+                    
+                </ul>
+            </div>
+        </div>
+
+    </section>
+    <script src="app.js"></script>
+</body>
+</html>
